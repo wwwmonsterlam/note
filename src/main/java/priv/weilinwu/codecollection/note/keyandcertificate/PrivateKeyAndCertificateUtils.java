@@ -27,6 +27,12 @@ import org.bouncycastle.x509.X509V3CertificateGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * dependency: org.slf4j/slf4j-api
+ *             org.bouncycastle/bcprov-jdk15on
+ *
+ */
 public class PrivateKeyAndCertificateUtils {
 
     public static final Logger logger = LoggerFactory.getLogger(PrivateKeyAndCertificateUtils.class);
