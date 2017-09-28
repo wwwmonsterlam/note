@@ -36,7 +36,8 @@ public class XmlParsing {
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, 
 			TransformerFactoryConfigurationError, TransformerException {
 		
-		File xmlFile = new File((new File("")).getAbsolutePath() + "/conf/data/xml/fibonacci1.xml");
+		String path = (new File("")).getAbsolutePath() + "/conf/data/xml/fibonacci.xml";
+		File xmlFile = new File(path);
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 		documentBuilderFactory.setIgnoringElementContentWhitespace(true);
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
