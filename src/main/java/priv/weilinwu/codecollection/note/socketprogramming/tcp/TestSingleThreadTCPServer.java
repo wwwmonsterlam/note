@@ -10,6 +10,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class TestSingleThreadTCPServer {
+	
     public static void main(String[] arg) throws IOException {
         try(ServerSocket serverSocket = new ServerSocket(8189)) {
             try(Socket clientSocket = serverSocket.accept()) {
