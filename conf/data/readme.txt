@@ -1,0 +1,1 @@
+This folder /conf/data/ contains resources which are used by the classes

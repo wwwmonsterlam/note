@@ -19,8 +19,9 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+
+//java itself comes with the org.w3c.dom.*, no need to add extra dependency
 import org.w3c.dom.DOMImplementation;
-// java itself comes with the org.w3c.dom.*, no need to add extra dependency
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Text;

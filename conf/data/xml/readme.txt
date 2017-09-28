@@ -1,0 +1,1 @@
+The files is used by priv.weilinwu.codecollection.note.xml.XmlParsing.java
