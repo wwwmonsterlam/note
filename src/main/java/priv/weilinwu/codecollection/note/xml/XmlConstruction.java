@@ -34,8 +34,6 @@ import priv.weilinwu.codecollection.note.keyandcertificate.PrivateKeyAndCertific
 
 public class XmlConstruction {
 	
-	public static final Logger logger = LoggerFactory.getLogger(XmlConstruction.class);
-	
 //	generate XML like this:
 //	<?xml version="1.0"?>
 //	<Fibonacci_Numbers>
@@ -47,11 +45,8 @@ public class XmlConstruction {
 	public static void main(String[] args) throws ParserConfigurationException, TransformerFactoryConfigurationError, 
 			TransformerException, IOException {
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-//		documentBuilderFactory.setIgnoringElementContentWhitespace(true);
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
 		Document document = documentBuilder.newDocument();
-		
-		XmlConstruction.logger.info("haha");
 		
 		// create element node and text node by using document
 		Element rootElement = document.createElement("Fibonacci_Numbers");
