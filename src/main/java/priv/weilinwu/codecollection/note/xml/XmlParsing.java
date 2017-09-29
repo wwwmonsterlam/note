@@ -55,6 +55,10 @@ public class XmlParsing {
 		// get root element
 		Element rootElement = document.getDocumentElement();
 		System.out.println("the root element is: " + rootElement.getTagName());
+		// console output
+//		tagName: Fibonacci
+//		index: 0
+//		text: 1
 		
 		// use NodeList and item() to get an element
 		NodeList nodeList = rootElement.getChildNodes();
@@ -63,6 +67,13 @@ public class XmlParsing {
 		System.out.println("tagName: " + childElement1.getTagName());
 		System.out.println("index: " + childElement1.getAttribute("index"));
 		System.out.println("text: " + childElement1.getTextContent());
+		// console output
+//		 remove first child's index:
+//		 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Fibonacci_Numbers>
+//		   <Fibonacci>1</Fibonacci>
+//		   <Fibonacci index="1">1</Fibonacci>
+//		   <Fibonacci index="2">2</Fibonacci>
+//		 </Fibonacci_Numbers>
 		
 		// remove
 		childElement1.removeAttribute("index");
@@ -72,6 +83,13 @@ public class XmlParsing {
 		rootElement.removeChild(childElement1);
 		System.out.println("\n remove the first child:");
 		System.out.println(new XmlParsing().xmlToString(document));
+		// console output
+//		 remove the first child:
+//			 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Fibonacci_Numbers>
+//			   
+//			   <Fibonacci index="1">1</Fibonacci>
+//			   <Fibonacci index="2">2</Fibonacci>
+//			 </Fibonacci_Numbers>
 	}
 	
 	public String xmlToString(Document document) throws TransformerException {
