@@ -19,7 +19,8 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 //java itself comes with the org.w3c.dom.*, no need to add extra dependency
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Document;
@@ -27,9 +28,13 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Text;
 import org.w3c.dom.ls.DOMImplementationLS;
 import org.w3c.dom.ls.LSOutput;
-import org.w3c.dom.ls.LSSerializer;;
+import org.w3c.dom.ls.LSSerializer;
+
+import priv.weilinwu.codecollection.note.keyandcertificate.PrivateKeyAndCertificateUtils;;
 
 public class XmlConstruction {
+	
+	public static final Logger logger = LoggerFactory.getLogger(XmlConstruction.class);
 	
 //	generate XML like this:
 //	<?xml version="1.0"?>
@@ -45,6 +50,8 @@ public class XmlConstruction {
 //		documentBuilderFactory.setIgnoringElementContentWhitespace(true);
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
 		Document document = documentBuilder.newDocument();
+		
+		XmlConstruction.logger.info("haha");
 		
 		// create element node and text node by using document
 		Element rootElement = document.createElement("Fibonacci_Numbers");
