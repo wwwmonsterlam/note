@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestAll" duration-ms="65" started-at="2017-09-30T01:37:38Z" finished-at="2017-09-30T01:37:38Z">
+    <groups>
+    </groups>
+    <test name="case1" duration-ms="65" started-at="2017-09-30T01:37:38Z" finished-at="2017-09-30T01:37:38Z">
+      <class name="priv.weilinwu.codecollection.test.TestNgTest">
+        <test-method status="PASS" signature="printHelloWorld()[pri:0, instance:priv.weilinwu.codecollection.test.TestNgTest@1d0685f]" name="printHelloWorld" duration-ms="27" started-at="2017-09-29T22:37:38Z" finished-at="2017-09-29T22:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printHelloWorld -->
+      </class> <!-- priv.weilinwu.codecollection.test.TestNgTest -->
+    </test> <!-- case1 -->
+  </suite> <!-- TestAll -->
+</testng-results>
