@@ -1,3 +1,11 @@
 2017-09-29 04:44:10 | INFO  | [main] p.w.c.n.x.XmlConstruction:54 - haha
 2017-09-29 04:44:58 | INFO  | [main] p.w.c.n.x.XmlConstruction:54 - haha
 2017-09-29 22:37:38 | INFO  | [main] p.w.c.t.TestNgTest:13 - Hello TestNg!~~
+2017-09-30 01:08:21 | INFO  | [main] p.w.c.t.MyTestListener:20 - TestListener-onStart method was run
+2017-09-30 01:08:21 | INFO  | [main] p.w.c.t.MyTestListener:40 - TestListener-onTestStart method was run
+2017-09-30 01:08:21 | INFO  | [main] p.w.c.t.TestNgTest:13 - Hello TestNg!~~
+2017-09-30 01:08:21 | INFO  | [main] p.w.c.t.MyTestListener:15 - TestListener-onFinish method was run
+2017-09-30 01:17:28 | INFO  | [main] p.w.c.t.MyTestListener:20 - TestListener-onStart method was run
+2017-09-30 01:17:28 | INFO  | [main] p.w.c.t.MyTestListener:40 - TestListener-onTestStart method was run
+2017-09-30 01:17:28 | INFO  | [main] p.w.c.t.TestNgTest:13 - Hello TestNg!~~
+2017-09-30 01:17:28 | INFO  | [main] p.w.c.t.MyTestListener:15 - TestListener-onFinish method was run

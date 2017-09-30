@@ -3,6 +3,10 @@
 <!-- @BeforeSuite -->
 <suite name="TestAll">
 
+	<listeners>
+	    <listener class-name="priv.weilinwu.codecollection.test.MyTestListener"/>
+	</listeners>
+
     <!-- @BeforeTest -->
     <test name="case1">
       <classes>
